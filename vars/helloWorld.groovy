@@ -1,3 +1,3 @@
-def call(String name,String dayofweek) {
-  sh "Welcomes to convergent network ${name}. enjoy the day and work ${dayofweek}."
+def call(Map config = [:]) {
+  sh "Welcomes to convergent network ${config.name}. enjoy the day and work ${config.dayofweek}."
 }
